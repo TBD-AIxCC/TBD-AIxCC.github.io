@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>42-b3yong-6ug - Team Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .tabcontent {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .emblem {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .italic-text {
+            font-style: italic;
+            font-size: 0.9em;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .member-category {
+            margin-top: 20px;
+        }
+
+        .member-category h3 {
+            text-decoration: underline;
+        }
+
+        .member-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .member-list li {
+            margin: 5px 0;
+        }
+
+        .member-list a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .member-list a:hover {
+            text-decoration: underline;
+        }
+
+        .team-news {
+            margin-top: 30px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .team-news h2 {
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 15px;
+        }
+
+        .news-item span {
+            font-weight: bold;
+        }
+
+        .publications-list {
+            text-align: left;
+            display: inline-block;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        .publications-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .publications-list li {
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .publication-title {
+            font-weight: bold;
+        }
+
+        .publication-link {
+            margin-top: 5px;
+            display: inline;
+        }
+
+        .team-members {
+            margin-top: 30px;
+            text-align: left;
+            display: inline-block;
+        }
+
+    </style>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.style.backgroundColor = "#ccc";
+        }
+
+        window.onload = function() {
+            document.getElementById("defaultOpen").click();
+        }
+    </script>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="javascript:void(0);" class="tablink" onclick="openTab(event, 'home')" id="defaultOpen">Home</a>
+        <a href="javascript:void(0);" class="tablink" onclick="openTab(event, 'members')">Members</a>
+        <a href="javascript:void(0);" class="tablink" onclick="openTab(event, 'publications')">Publications</a>
+    </div>
+
+    <div class="content">
+        <div id="home" class="tabcontent">
+            <h1>We are 42-b3yong-6ug</h1>
+            <img src="42.png" alt="Team Emblem" class="emblem">
+            <p class="italic-text">42 is the answer to the "Ultimate Question of Life, the Universe, and Everything"</p>
+            <p>42-b3yong-6ug is a multi-university team participating in <a href="https://www.darpa.mil/program/ai-cyber-challenge" target="_blank">DARPA AI Cyber Challenge (AIxCC)</a> and related future research.</p>
+            <p>We are dedicated to securing computer systems and software using AI algorithms and large language models (LLMs).</p>
+
+            <div class="team-news">
+                <h2>Team News</h2>
+                <div class="news-item">
+                    <p><span>[August 2024]</span> Our team 42-b3yond-6ug wins <a href="https://www.darpa.mil/program/ai-cyber-challenge" target="_blank">DARPA AI Cyber Challenge (AIxCC)</a> semi-final and is awarded $2M towards final!</p>
+                </div>
+                <div class="news-item">
+                    <p><span>[March 2024]</span> Our team 42-b3yond-6ug is awarded $1M towards <a href="https://www.darpa.mil/program/ai-cyber-challenge" target="_blank">DARPA AI Cyber Challenge (AIxCC)</a> semi-final!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="members" class="tabcontent">
+            <div class="team-members">
+                <h2>Team Members</h2>
+
+                <div class="member-category">
+                    <h3>Faculty</h3>
+                    <ul class="member-list">
+                        <li><a href="http://xinyuxing.org/" target="_blank">Prof. Xinyu Xing</a></li>
+                        <li><a href="https://users.cs.northwestern.edu/~ychen/" target="_blank">Prof. Yan Chen</a></li>
+                        <li><a href="http://cusecurity.cs.colorado.edu/yueqichen/" target="_blank">Prof. Yueqi Chen</a></li>
+                        <li><a href="https://sites.google.com/view/junxzm" target="_blank">Prof. Jun Xu</a></li>
+                        <li><a href="https://cs.uwaterloo.ca/~m285xu/" target="_blank">Prof. Meng Xu</a></li>
+                        <li><a href="https://www.cs.unh.edu/~dxu/" target="_blank">Prof. Dongpeng Xu</a></li>
+                    </ul>
+                </div>
+
+                <div class="member-category">
+                    <h3>Students</h3>
+                    <ul class="member-list">
+                        <li><a href="https://shiwx.org/" target="_blank">Wenxuan Shi</a></li>
+                        <li><a href="https://www.dataisland.org/" target="_blank">Zheng Yu</a></li>
+                        <li><a href="https://faculty.utah.edu/u1399304-YUNHANG_ZHANG/contact/index.hml" target="_blank">Yuhang Zhang</a></li>
+                        <li><a href="https://ziyiguo.site/" target="_blank">Ziyi Guo</a></li>
+                        <li><a href="https://yuhangw.blog/" target="_blank">Yuhang Wu</a></li>
+                        <li><a href="https://scholar.google.com/citations?user=y1iSCEAAAAAJ&hl=en" target="_blank">Dang K Le</a></li>
+                        <li><a href="https://sites.northwestern.edu/xinqiansun/" target="_blank">Xinqian Sun</a></li>
+                        <li><a href="https://scholar.google.com/citations?user=m5u2MdMAAAAJ&hl=en" target="_blank">Kefu Wu</a></li>
+                        <li><a href="https://i.secondst.org/" target="_blank">Qinrun Dai</a></li>
+                        <li><a href="javascript:void(0);" target="_blank">Ruitong Liu</a></li>
+                        <li><a href="javascript:void(0);" target="_blank">Zheyun Feng</a></li>
+                        <li><a href="javascript:void(0);" target="_blank">Qingyang Zhou</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="publications" class="tabcontent">
+            <div class="publications-list">
+                <ul>
+                    <li>
+                        <p>
+                            <span class="publication-title">BandFuzz: A Practical Framework for Collaborative Fuzzing with Reinforcement Learning.</span> [<a href="https://dl.acm.org/doi/10.1145/3643659.3648563" target="_blank">Link</a>]
+                            <br>Wenxuan Shi, Hongwei Li, Jiahao Yu, Wenbo Guo, Xinyu Xing
+                            <br><i>Proceedings of the 17th International Workshop on Search-Based and Fuzz Testing (SBFT), Lisbon, Portugal, April 2024 (<span class="highlight">Ranked #1</span>).</i>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="publication-title">ShadowBound: Efficient Heap Memory Protection Through Advanced Metadata Management and Customized Compiler Optimization.</span> [<a href="https://www.usenix.org/conference/usenixsecurity24/presentation/yu-zheng" target="_blank">Link</a>]
+                            <br>Zheng Yu, Ganxiang Yang, Xinyu Xing
+                            <br><i>Proceedings of the 33rd USENIX Security Symposium, Philadelphia, August 2024.</i>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="publication-title">SeaK: Rethinking the Design of a Secure Allocator for OS Kernel.</span> [<a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-zicheng" target="_blank">Link</a>]
+                            <br>Zicheng Wang, Yicheng Guang, Yueqi Chen, Zhenpeng Lin, Michael Le, Dang K Le, Dan Williams, Xinyu Xing, Zhongshu Gu, Hani Jamjoom
+                            <br><i>Proceedings of the 33rd USENIX Security Symposium, Philadelphia, August 2024.</i>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="publication-title">Take a Step Further: Understanding Page Spray in Linux Kernel Exploitation.</span> [<a href="https://www.usenix.org/conference/usenixsecurity24/presentation/guo-ziyi" target="_blank">Link</a>]
+                            <br>Ziyi Guo, Dang K Le, Zhenpeng Lin, Kyle Zeng, Ruoyu Wang, Tiffany Bao, Yan Shoshitaishvili, Adam Doupé, Xinyu Xing
+                            <br><i>Proceedings of the 33rd USENIX Security Symposium, Philadelphia, August 2024.</i>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="publication-title">LLM-Fuzzer: Scaling Assessment of Large Language Model Jailbreaks.</span> [<a href="https://www.usenix.org/conference/usenixsecurity24/presentation/yu-jiahao" target="_blank">Link</a>]
+                            <br>Jiahao Yu, Xingwei Lin, Zheng Yu, Xinyu Xing
+                            <br><i>Proceedings of the 33rd USENIX Security Symposium, Philadelphia, August 2024.</i>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="publication-title">CAMP: Compiler and Allocator-based Heap Memory Protection.</span> [<a href="https://www.usenix.org/conference/usenixsecurity24/presentation/lin-zhenpeng" target="_blank">Link</a>]
+                            <br>Zhenpeng Lin, Zheng Yu, Ziyi Guo, Simone Campanoni, Peter Dinda, Xinyu Xing
+                            <br><i>Proceedings of the 33rd USENIX Security Symposium, Philadelphia, August 2024.</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
